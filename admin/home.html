@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Admin-Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+        <link rel="stylesheet" type="text/css" href="order.css"> 
+
+
+        <style type="text/css">
+            :root {
+        
+       --header-background: #fff;
+       --light-color:#666;      
+       --dropdown-content-background: #f1f1f1;  
+       --box-shadow:0 .5rem 1.5rem  rgba(0, 0, 0, 0.1);
+
+    }
+
+        
+    *{
+        margin: 0; padding: 0;      
+    }
+
+    body{
+        width: 100%;
+    }
+
+
+    header{
+        position: fixed; 
+        top: 0;
+        left: 0;
+        right: 0;               
+       background: #E3E6F3;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px 80px;
+       box-shadow: var(--box-shadow);
+       z-index: 1; 
+        
+    }
+
+    header .logout{
+
+          background-image: url(../photo/button/button.png);
+            background-color: transparent;
+            color: #088178;
+            border: 0px;
+            padding: 14px 80px 14px 65px;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+            margin-bottom: 10px;
+    }
+
+    header .navbar a{
+        
+        font-size: 17px;
+        border-radius: 5px;
+        padding: 7px 13px;
+        color: var(--light-color) ;
+        text-decoration: none;
+    } 
+    
+
+    header .navbar a.active,
+    header .navbar a:hover{
+
+        color: #088178; 
+        text-decoration: underline; 
+
+    }
+
+   
+
+
+    .bar{
+
+        margin-top: 90px;                      
+       background: #E3E6F3;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       padding: 25px 50px;
+       box-shadow: var(--box-shadow);
+       z-index: 1; 
+    }
+
+    .bar .navbar a{
+      
+        font-size: 20px;    
+        padding: 7px 13px;
+        color: var(--light-color) ;
+        text-decoration: none;
+
+    }    
+    
+
+     .bar .navbar a:hover{
+
+        background-color: #088178;
+        color: #fff;
+
+}
+
+
+
+.homeContent {     
+    
+    padding: 15px 35px; 
+    line-height: 25px;
+    border: px solid #ccc;    
+} 
+
+#overview{
+
+    text-decoration: none;
+}
+
+.overview {
+
+    border: px solid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px; 
+    width: 100%;
+}
+
+.overview .figure {
+
+    padding: 65px 18px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    font-weight:bold;
+    cursor:pointer;
+
+}
+
+.overview a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 20px;
+}
+
+.overview h4 {
+    margin-bottom: 10px;
+}
+
+
+ 
+    
+    
+        </style>
+
+
+    
+</head>
+<body>
+
+   <header>
+        
+        <a href="home.html" class="logo"><img src="../photo/logo/logo.png" height="40px"> </a>
+        <a href="index.html" class="logout">Logout</a>   
+
+    </header>
+
+
+
+<section class="bar">  
+
+  
+    
+   <nav class="navbar">
+
+        <a href="feature_item.html">Feature Item</a>
+        <a href="new_arrival.html">New Arrival</a>
+        <a href="category.html">Categories</a>
+        <a href="shop.html">Shop</a>
+        <a href="msg.html">Messeges</a>
+        <a href="reg.html">Register Customers</a>
+       
+         
+        
+   </nav>     
+
+</section>
+
+<section class="homeContent">
+
+    
+
+   <div class="overview">           
+
+
+
+       <a href="feature_item.html" >
+           <div class="figure">
+               <h4>Feature Items</h4>
+              8
+           </div>
+       </a>
+
+
+        <a href="menu-dishes.php#menu" >
+           <div class="figure">
+               <h4>New Arrival</h4>
+               8
+           </div>
+       </a>
+
+
+       <a href="category.php#cat" >
+           <div class="figure">
+               <h4>Categories</h4>
+               5
+           </div>
+       </a>
+
+
+        <a href="order.php#order" >
+           <div class="figure">
+               <h4>Orders</h4>
+              0
+           </div>
+       </a>
+
+
+        <a href="customer-msg.php#msg" >
+           <div class="figure">
+               <h4>Customer Messges</h4>
+              0
+           </div>
+       </a>
+
+
+       <a href="reg_customers.php#rgc" >
+           <div class="figure">
+               <h4>Registered Customers</h4>
+               0
+           </div>
+       </a>
+
+       
+
+       
+
+   </div>
+
+
+</section>
+
+
+
+
+
+</body>
+</html>
